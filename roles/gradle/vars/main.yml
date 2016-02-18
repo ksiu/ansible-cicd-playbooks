@@ -1,0 +1,5 @@
+---
+ansible_cache_dir: "/tmp/ansible_cache"    
+gradle_version: "2.10"
+gradle_zipfile: "gradle-{{gradle_version}}-all.zip"
+gradle_folder:  "gradle-{{gradle_version}}"

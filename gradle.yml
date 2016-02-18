@@ -1,0 +1,6 @@
+- name: Gradle
+  hosts: jenkins
+  roles:
+    - gradle
+
+

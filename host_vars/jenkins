@@ -1,0 +1,12 @@
+---
+plugins:
+  - 'gradle'
+  - 'git'
+  - 'copyartifact'
+  - 'build-pipeline-plugin'  
+port: 8080
+prefix: '/build'
+email:
+  smtp_host: 'mail.example.com'
+  smtp_ssl: 'true'
+  default_email_suffix: '@example.com'

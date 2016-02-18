@@ -1,0 +1,5 @@
+- name: Artifactory
+  hosts: artifactory
+  roles:
+    - jdk8
+    - artifactory

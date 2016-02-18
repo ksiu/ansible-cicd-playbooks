@@ -1,0 +1,10 @@
+---
+- name: Add APT repo
+  apt_repository: repo='ppa:cwchien/gradle' update_cache=yes state=present 
+  sudo: yes
+  tags: [gradle]
+
+- name: Install Gradle
+  apt: name=gradle update_cache=yes state=present
+  sudo: yes
+  tags: [gradle]

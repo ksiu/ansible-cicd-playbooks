@@ -1,0 +1,6 @@
+artifactory_version: "3.9.2"
+artifactory_username: "artifactory"
+artifactory_password: "password"
+artifactory_url: "https://bintray.com/artifact/download/jfrog/artifactory/artifactory-{{artifactory_version}}.zip"
+artifactory_file: "artifactory-{{artifactory_version}}.zip"
+artifactory_home: "/opt/artifactory/artifactory-{{artifactory_version}}"
