@@ -20,6 +20,7 @@ boxes = [
 Vagrant.configure("2") do |config|
   config.vm.box = box
   config.vm.box_url = url
+  config.ssh.insert_key = false
 
   boxes.each do |opts|
     config.vm.define opts[:name] do |config|
