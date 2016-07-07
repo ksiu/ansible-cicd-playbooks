@@ -9,6 +9,14 @@
 - name: Install Jenkins
   sudo: yes
   apt: pkg=jenkins state=latest update_cache=yes cache_valid_time=86400
+  environment:
+    ENKINS_JAVA_OPTIONS: "-Djenkins.install.runSetupWizard=false"
+
+- name: Ensure jenkins is running
+  sudo: yes
+  service:
+    name: jenkins
+    state: started
 
 # Install Jenkins cli
 - include: cli.yml
